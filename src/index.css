@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    @apply bg-surface font-sans text-body-md text-on-surface antialiased;
+    overscroll-behavior: none;
+  }
+}
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.material-symbols-outlined {
+  user-select: none;
+}
+
+/* Loading skeleton */
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(var(--c-surface-container-high));
+}
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg, transparent, rgb(var(--c-surface-container-lowest) / 0.6), transparent);
+  animation: shimmer 1.6s infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after {
+    animation: none;
+  }
+}
+
+/* Range inputs: the native track is hidden so two inputs can share one drawn track;
+   only the thumbs take pointer events. */
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 28px;
+  margin: 0;
+  background: transparent;
+  pointer-events: none;
+}
+.range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+.range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  border: 9px solid rgb(var(--c-primary));
+  background: rgb(var(--c-surface-container-lowest));
+  box-shadow: 0 3px 10px rgba(0, 92, 85, 0.35);
+  cursor: pointer;
+}
+.range::-moz-range-thumb {
+  pointer-events: auto;
+  box-sizing: border-box;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  border: 9px solid rgb(var(--c-primary));
+  background: rgb(var(--c-surface-container-lowest));
+  box-shadow: 0 3px 10px rgba(0, 92, 85, 0.35);
+  cursor: pointer;
+}
+.range:focus {
+  outline: none;
+}
+.range:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid rgb(var(--c-primary));
+  outline-offset: 2px;
+}
+.range:focus-visible::-moz-range-thumb {
+  outline: 2px solid rgb(var(--c-primary));
+  outline-offset: 2px;
+}

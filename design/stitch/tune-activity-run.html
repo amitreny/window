@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface": "#1c1b1b", "on-error-container": "#93000a", "on-background": "#1c1b1b", "secondary": "#904d00", "on-secondary": "#ffffff", "on-tertiary-container": "#ffe5de", "primary": "#005c55", "on-tertiary-fixed-variant": "#872100", "tertiary-fixed": "#ffdbd1", "on-surface-variant": "#3e4947", "on-primary-fixed": "#00201d", "background": "#fcf9f8", "surface-container-highest": "#e5e2e1", "primary-fixed": "#9cf2e8", "secondary-fixed": "#ffdcc3", "on-primary-container": "#a3faef", "on-error": "#ffffff", "inverse-surface": "#313030", "on-tertiary-fixed": "#3b0900", "on-secondary-container": "#663500", "surface-container-low": "#f6f3f2", "error-container": "#ffdad6", "on-secondary-fixed": "#2f1500", "surface-bright": "#fcf9f8", "tertiary": "#9a2700", "secondary-container": "#fe932c", "outline": "#6e7977", "on-primary-fixed-variant": "#00504a", "primary-fixed-dim": "#80d5cb", "surface-dim": "#dcd9d9", "inverse-primary": "#80d5cb", "surface-variant": "#e5e2e1", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb77d", "surface-tint": "#006a63", "tertiary-container": "#be3c14", "surface-container-high": "#eae7e7", "surface": "#fcf9f8", "inverse-on-surface": "#f3f0ef", "tertiary-fixed-dim": "#ffb5a0", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#6e3900", "primary-container": "#0f766e", "outline-variant": "#bdc9c6", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-container": "#f0eded" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "margin-tablet": "2rem", "gutter": "1.25rem", "gutter-desktop": "2rem", "space-xl": "3rem", "space-xs": "0.375rem", "space-md": "1.25rem", "margin-desktop": "3.5rem", "margin": "1.25rem", "space-lg": "2rem" }, fontFamily: { "body-md": ["Manrope"], "headline-lg-mobile": ["Manrope"], "numeral-score": ["Manrope"], "display-hero-mobile": ["Manrope"], "headline-md": ["Manrope"], "body-lg": ["Manrope"], "headline-lg": ["Manrope"], "label-md": ["Manrope"], "numeral-score-mobile": ["Manrope"], "display-hero": ["Manrope"], "body-sm": ["Manrope"], "headline-sm": ["Manrope"], "label-lg": ["Manrope"] }, fontSize: { "body-md": ["0.9375rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "700" }], "numeral-score": ["3.25rem", { "lineHeight": "0.9", "letterSpacing": "-0.05em", "fontWeight": "800" }], "display-hero-mobile": ["3.5rem", { "lineHeight": "0.95", "letterSpacing": "-0.04em", "fontWeight": "800" }], "headline-md": ["1.5rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "600" }], "numeral-score-mobile": ["2.5rem", { "lineHeight": "0.9", "letterSpacing": "-0.045em", "fontWeight": "800" }], "display-hero": ["5rem", { "lineHeight": "0.95", "letterSpacing": "-0.04em", "fontWeight": "800" }], "body-sm": ["0.8125rem", { "lineHeight": "1.45", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><a class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[24px]">arrow_back</span></a><h1 class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Run</h1></div><div class="flex items-center"><button class="min-w-[44px] min-h-[44px] px-space-xs flex items-center justify-center rounded-full font-label-lg text-label-lg text-primary hover:text-primary-container transition-colors" type="button">Reset</button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full">
+<div class="px-gutter pt-space-xs pb-space-sm">
+<p class="font-body-sm text-body-sm text-on-surface-variant/80">Hours outside your limits score lower.</p>
+</div>
+<div class="px-gutter space-y-space-md pb-32">
+<!-- Card 1: Comfortable Temperature -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)] transition-transform duration-200">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary">device_thermostat</span>
+<span class="font-label-lg text-label-lg tracking-wide uppercase text-on-surface-variant">Comfortable temperature</span>
+</div>
+<span class="font-label-md text-label-md bg-surface-container text-on-surface-variant px-2 py-0.5 rounded-full">Sweet Spot</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="font-numeral-score-mobile text-numeral-score-mobile text-on-surface tracking-tighter">
+          12° <span class="font-body-md text-body-md text-on-surface-variant font-normal mx-1">—</span> 26°
+        </div>
+<span class="font-body-sm text-body-sm text-primary font-medium">Optimal Running Range</span>
+</div>
+<!-- Dual Range Slider Simulation -->
+<div class="relative py-4 select-none">
+<div class="relative w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="absolute top-0 bottom-0 bg-primary-container rounded-full" style="left: 30%; right: 35%;"></div>
+</div>
+<!-- Left Thumb (12°) -->
+<div class="absolute top-1/2 -translate-y-1/2 w-7 h-7 bg-primary rounded-full shadow-[0_3px_10px_rgba(0,92,85,0.35)] flex items-center justify-center cursor-pointer transition-transform active:scale-110" style="left: calc(30% - 14px);">
+<div class="w-2.5 h-2.5 bg-surface-container-lowest rounded-full"></div>
+</div>
+<!-- Right Thumb (26°) -->
+<div class="absolute top-1/2 -translate-y-1/2 w-7 h-7 bg-primary rounded-full shadow-[0_3px_10px_rgba(0,92,85,0.35)] flex items-center justify-center cursor-pointer transition-transform active:scale-110" style="left: calc(65% - 14px);">
+<div class="w-2.5 h-2.5 bg-surface-container-lowest rounded-full"></div>
+</div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md pt-1">
+<span>0°C</span>
+<span class="text-primary font-medium">12°C</span>
+<span class="text-primary font-medium">26°C</span>
+<span>40°C</span>
+</div>
+</div>
+<!-- Card 2: Max Wind -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)]">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary">air</span>
+<span class="font-label-lg text-label-lg tracking-wide uppercase text-on-surface-variant">Max wind</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant/70">Breeze Limit</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="font-numeral-score-mobile text-numeral-score-mobile text-on-surface tracking-tighter">
+          25 <span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">km/h</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Moderate breeze limit</span>
+</div>
+<!-- Slider Track -->
+<div class="relative py-4 select-none">
+<div class="relative w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="absolute top-0 bottom-0 bg-primary-container rounded-full" style="width: 41.6%;"></div>
+</div>
+<div class="absolute top-1/2 -translate-y-1/2 w-7 h-7 bg-primary rounded-full shadow-[0_3px_10px_rgba(0,92,85,0.35)] flex items-center justify-center cursor-pointer transition-transform active:scale-110" style="left: calc(41.6% - 14px);">
+<div class="w-2.5 h-2.5 bg-surface-container-lowest rounded-full"></div>
+</div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md pt-1">
+<span>0</span>
+<span class="text-primary font-medium">20</span>
+<span>40</span>
+<span>60 km/h</span>
+</div>
+</div>
+<!-- Card 3: Max Rain Chance -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)]">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary">rainy</span>
+<span class="font-label-lg text-label-lg tracking-wide uppercase text-on-surface-variant">Max rain chance</span>
+</div>
+<span class="font-label-md text-label-md bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full">Low tolerance</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="font-numeral-score-mobile text-numeral-score-mobile text-on-surface tracking-tighter">
+          20<span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">%</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tolerate light drizzle only</span>
+</div>
+<!-- Slider Track -->
+<div class="relative py-4 select-none">
+<div class="relative w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="absolute top-0 bottom-0 bg-primary-container rounded-full" style="width: 20%;"></div>
+</div>
+<div class="absolute top-1/2 -translate-y-1/2 w-7 h-7 bg-primary rounded-full shadow-[0_3px_10px_rgba(0,92,85,0.35)] flex items-center justify-center cursor-pointer transition-transform active:scale-110" style="left: calc(20% - 14px);">
+<div class="w-2.5 h-2.5 bg-surface-container-lowest rounded-full"></div>
+</div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md pt-1">
+<span>0%</span>
+<span class="text-primary font-medium">20%</span>
+<span>50%</span>
+<span>100%</span>
+</div>
+</div>
+<!-- Card 4: Max UV Index -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)]">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-secondary">wb_sunny</span>
+<span class="font-label-lg text-label-lg tracking-wide uppercase text-on-surface-variant">Max UV index</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-semibold">Sun protection</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="font-numeral-score-mobile text-numeral-score-mobile text-on-surface tracking-tighter">
+          6
+        </div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Moderate / High threshold</span>
+</div>
+<!-- Color Progression Slider -->
+<div class="relative py-4 select-none">
+<div class="relative w-full h-2 bg-surface-container rounded-full overflow-hidden flex">
+<div class="w-1/4 h-full bg-primary"></div>
+<div class="w-1/4 h-full bg-secondary-fixed-dim"></div>
+<div class="w-1/4 h-full bg-secondary"></div>
+<div class="w-1/4 h-full bg-tertiary opacity-40"></div>
+</div>
+<div class="absolute top-1/2 -translate-y-1/2 w-7 h-7 bg-surface-container-lowest rounded-full shadow-[0_3px_12px_rgba(0,0,0,0.18)] flex items-center justify-center cursor-pointer transition-transform active:scale-110" style="left: calc(50% - 14px);">
+<div class="w-3.5 h-3.5 bg-secondary rounded-full"></div>
+</div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md pt-1">
+<span>1 Low</span>
+<span class="text-primary font-medium">3 Mod</span>
+<span class="text-secondary font-bold">6 High</span>
+<span>8 Very High</span>
+<span>12+</span>
+</div>
+</div>
+<!-- Card 5: Max Air Quality Index -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)]">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px] text-primary">eco</span>
+<span class="font-label-lg text-label-lg tracking-wide uppercase text-on-surface-variant">Max air quality index</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Clean Lungs</span>
+</div>
+<div class="flex items-baseline justify-between mb-space-sm">
+<div class="font-numeral-score-mobile text-numeral-score-mobile text-on-surface tracking-tighter">
+          100 <span class="font-headline-sm text-headline-sm font-semibold text-on-surface-variant">AQI</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Moderate quality cut-off</span>
+</div>
+<!-- Slider Track -->
+<div class="relative py-4 select-none">
+<div class="relative w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="absolute top-0 bottom-0 bg-primary-container rounded-full" style="width: 33.3%;"></div>
+</div>
+<div class="absolute top-1/2 -translate-y-1/2 w-7 h-7 bg-primary rounded-full shadow-[0_3px_10px_rgba(0,92,85,0.35)] flex items-center justify-center cursor-pointer transition-transform active:scale-110" style="left: calc(33.3% - 14px);">
+<div class="w-2.5 h-2.5 bg-surface-container-lowest rounded-full"></div>
+</div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md pt-1">
+<span>0 Good</span>
+<span class="text-primary font-medium">50</span>
+<span class="text-primary font-bold">100 Mod</span>
+<span>150 Unhealthy</span>
+<span>300</span>
+</div>
+</div>
+<!-- Card 6: Daylight Only Toggle -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)] flex items-center justify-between">
+<div class="flex items-start gap-3 pr-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px] text-primary">light_mode</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Daylight only</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Exclude nighttime and dusk hours</p>
+</div>
+</div>
+<!-- Editorial Switch -->
+<button aria-pressed="true" class="w-14 h-8 bg-primary rounded-full p-1 transition-colors duration-200 focus:outline-none flex items-center cursor-pointer justify-end shadow-inner" type="button">
+<span class="w-6 h-6 bg-surface-container-lowest rounded-full shadow-md transform transition-transform"></span>
+</button>
+</div>
+<!-- Card 7: Earliest and Latest Time -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)]">
+<div class="flex items-center gap-2 text-on-surface-variant mb-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">schedule</span>
+<span class="font-label-lg text-label-lg tracking-wide uppercase text-on-surface-variant">Earliest and latest</span>
+</div>
+<div class="grid grid-cols-2 gap-3 items-center">
+<!-- Earliest Selector Pill -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded-2xl p-3.5 flex flex-col justify-between cursor-pointer transition-colors group">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-1">Earliest start</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">6:00 AM</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-y-0.5 transition-transform">expand_more</span>
+</div>
+</div>
+<!-- Latest Selector Pill -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded-2xl p-3.5 flex flex-col justify-between cursor-pointer transition-colors group">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant mb-1">Latest return</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">9:00 PM</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:translate-y-0.5 transition-transform">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 8: Live Preview Card -->
+<div class="bg-surface-container-lowest rounded-[20px] p-space-md shadow-[0_8px_30px_rgba(15,118,110,0.08)] bg-gradient-to-br from-surface-container-lowest via-surface-container-lowest to-primary-fixed/20 relative overflow-hidden">
+<!-- Pulsing Telemetry Indicator -->
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="relative flex items-center justify-center w-2.5 h-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</div>
+<span class="font-label-md text-label-md tracking-wider uppercase text-primary font-bold">With these settings</span>
+</div>
+<span class="font-label-md text-label-md bg-primary/10 text-primary px-2.5 py-0.5 rounded-full font-semibold">Live impact</span>
+</div>
+<!-- Preview Summary -->
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider block">Best upcoming window</span>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface mt-0.5">6:40 PM <span class="text-on-surface-variant font-normal text-body-md">today</span></p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">19°C · Calm · Clear skies</p>
+</div>
+<!-- Score Circular Badge -->
+<div class="w-16 h-16 rounded-full bg-primary flex flex-col items-center justify-center text-on-primary shadow-[0_4px_16px_rgba(0,92,85,0.3)] shrink-0">
+<span class="font-numeral-score-mobile text-[1.75rem] font-extrabold leading-none">92</span>
+<span class="font-label-md text-[0.625rem] tracking-wider uppercase opacity-85">Match</span>
+</div>
+</div>
+<!-- Miniature Timeline Bar Chart -->
+<div class="pt-2">
+<div class="flex items-end justify-between gap-1 h-14 w-full px-1">
+<!-- Hourly score bars -->
+<div class="flex-1 bg-surface-container rounded-t-sm h-[30%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[20%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[15%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[40%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[55%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[70%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[65%]"></div>
+<!-- Highlighted Peak Window -->
+<div class="flex-1 bg-primary-fixed-dim rounded-t-sm h-[82%] relative group">
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-on-surface text-surface text-[10px] font-bold px-1.5 py-0.5 rounded opacity-0 group-hover:opacity-100 transition-opacity">90</div>
+</div>
+<div class="flex-1 bg-primary rounded-t-sm h-[95%] relative">
+<div class="absolute -top-1.5 left-1/2 -translate-x-1/2 w-1.5 h-1.5 bg-secondary-container rounded-full"></div>
+</div>
+<div class="flex-1 bg-primary-fixed-dim rounded-t-sm h-[86%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[60%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[45%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[30%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[15%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[10%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[20%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[50%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[68%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[74%]"></div>
+<div class="flex-1 bg-surface-container rounded-t-sm h-[60%]"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-[0.65rem] tracking-wider pt-2 px-1">
+<span>12 PM</span>
+<span class="text-primary font-bold">6 PM PEAK</span>
+<span>12 AM</span>
+<span>6 AM</span>
+</div>
+</div>
+</div>
+<!-- Editorial Inspiration Snapshot -->
+<div class="relative rounded-[20px] overflow-hidden shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04)]">
+<div class="bg-cover bg-center w-full h-32 relative flex items-end p-4" data-alt="A solo runner moving gracefully along a pine-lined coastal path during golden hour light, soft atmospheric mist rising from the ocean, peaceful editorial photography, warm amber tones, clean composition." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAe7KrD9kpizhyHxRsk4y6H7H5pM4VoHu_c_FlpSyEVvmddRcaKQd2_Aua426l63Wz3hhMpuKQoYXJ2ct6fxSavgMsHg4HPa8oG8ZLl6-fDMRpoJQ9LEA8dEPLcsJ04Tqmua_WQRIQQUyS1XDG6tLCyE1ZoQISD9SlMyPzH6eq-Jx8j1X1IqNv-VHFUyzPksWd3eAsAoyuXxw0Z5qN2C7nKBBCVbdsU78nuxphyy6u9N8_9t0G0HFn')">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+<div class="relative z-10 text-white">
+<p class="font-label-md text-label-md tracking-wider uppercase opacity-80">Philosophy</p>
+<p class="font-body-sm text-body-sm font-medium">Fine-tuning creates windows you look forward to all day.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Save Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-xl px-gutter pt-3 pb-safe shadow-[0_-4px_16px_rgba(0,0,0,0.04)]">
+<div class="max-w-[1120px] mx-auto w-full pb-3">
+<button class="w-full bg-primary-container hover:bg-primary text-on-primary py-4 px-6 rounded-2xl font-label-lg text-label-lg font-semibold tracking-wide shadow-md active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="button">
+<span>Save Conditions</span>
+<span class="material-symbols-outlined text-[20px]">check</span>
+</button>
+</div>
+</div>
+</div></main></body></html>

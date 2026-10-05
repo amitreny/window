@@ -1,0 +1,4 @@
+node_modules
+dist
+# holds the Stitch API key
+.mcp.json

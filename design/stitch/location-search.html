@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-surface": "#1c1b1b", "on-error-container": "#93000a", "on-background": "#1c1b1b", "secondary": "#904d00", "on-secondary": "#ffffff", "on-tertiary-container": "#ffe5de", "primary": "#005c55", "on-tertiary-fixed-variant": "#872100", "tertiary-fixed": "#ffdbd1", "on-surface-variant": "#3e4947", "on-primary-fixed": "#00201d", "background": "#fcf9f8", "surface-container-highest": "#e5e2e1", "primary-fixed": "#9cf2e8", "secondary-fixed": "#ffdcc3", "on-primary-container": "#a3faef", "on-error": "#ffffff", "inverse-surface": "#313030", "on-tertiary-fixed": "#3b0900", "on-secondary-container": "#663500", "surface-container-low": "#f6f3f2", "error-container": "#ffdad6", "on-secondary-fixed": "#2f1500", "surface-bright": "#fcf9f8", "tertiary": "#9a2700", "secondary-container": "#fe932c", "outline": "#6e7977", "on-primary-fixed-variant": "#00504a", "primary-fixed-dim": "#80d5cb", "surface-dim": "#dcd9d9", "inverse-primary": "#80d5cb", "surface-variant": "#e5e2e1", "error": "#ba1a1a", "secondary-fixed-dim": "#ffb77d", "surface-tint": "#006a63", "tertiary-container": "#be3c14", "surface-container-high": "#eae7e7", "surface": "#fcf9f8", "inverse-on-surface": "#f3f0ef", "tertiary-fixed-dim": "#ffb5a0", "surface-container-lowest": "#ffffff", "on-secondary-fixed-variant": "#6e3900", "primary-container": "#0f766e", "outline-variant": "#bdc9c6", "on-primary": "#ffffff", "on-tertiary": "#ffffff", "surface-container": "#f0eded" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.75rem", "margin-tablet": "2rem", "gutter": "1.25rem", "gutter-desktop": "2rem", "space-xl": "3rem", "space-xs": "0.375rem", "space-md": "1.25rem", "margin-desktop": "3.5rem", "margin": "1.25rem", "space-lg": "2rem" }, fontFamily: { "body-md": ["Manrope"], "headline-lg-mobile": ["Manrope"], "numeral-score": ["Manrope"], "display-hero-mobile": ["Manrope"], "headline-md": ["Manrope"], "body-lg": ["Manrope"], "headline-lg": ["Manrope"], "label-md": ["Manrope"], "numeral-score-mobile": ["Manrope"], "display-hero": ["Manrope"], "body-sm": ["Manrope"], "headline-sm": ["Manrope"], "label-lg": ["Manrope"] }, fontSize: { "body-md": ["0.9375rem", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["1.75rem", { "lineHeight": "1.2", "letterSpacing": "-0.025em", "fontWeight": "700" }], "numeral-score": ["3.25rem", { "lineHeight": "0.9", "letterSpacing": "-0.05em", "fontWeight": "800" }], "display-hero-mobile": ["3.5rem", { "lineHeight": "0.95", "letterSpacing": "-0.04em", "fontWeight": "800" }], "headline-md": ["1.5rem", { "lineHeight": "1.25", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["1.125rem", { "lineHeight": "1.6", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-lg": ["2.25rem", { "lineHeight": "1.15", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-md": ["0.75rem", { "lineHeight": "1", "letterSpacing": "0.04em", "fontWeight": "600" }], "numeral-score-mobile": ["2.5rem", { "lineHeight": "0.9", "letterSpacing": "-0.045em", "fontWeight": "800" }], "display-hero": ["5rem", { "lineHeight": "0.95", "letterSpacing": "-0.04em", "fontWeight": "800" }], "body-sm": ["0.8125rem", { "lineHeight": "1.45", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["1.125rem", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["0.875rem", { "lineHeight": "1", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-xs"><a class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors" data-path="daily-windows" href="#"><span class="material-symbols-outlined text-[24px]">arrow_back</span></a><h1 class="font-headline-sm text-headline-sm font-bold tracking-tight text-on-surface">Location Search</h1></div><div class="flex items-center"><a class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface transition-colors" data-path="daily-windows" href="#"><span class="material-symbols-outlined text-[20px]">close</span></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1120px] mx-auto px-margin sm:px-margin-tablet lg:px-margin-desktop py-space-md flex flex-col gap-space-lg">
+<!-- 1. Search Bar -->
+<div class="relative w-full">
+<div class="flex items-center w-full h-14 px-space-md bg-surface-container-lowest rounded-[20px] shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)] transition-all focus-within:shadow-[0_12px_32px_-4px_rgba(26,26,26,0.08)]">
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant mr-space-sm select-none">search</span>
+<div class="flex items-center flex-1 min-w-0">
+<input autocomplete="off" class="w-full bg-transparent font-headline-sm text-headline-sm font-bold text-on-surface placeholder:text-outline/50 placeholder:font-normal focus:outline-none tracking-tight" id="location-search-input" placeholder="Search city, trail, or coordinates..." spellcheck="false" type="text" value="Tel"/>
+</div>
+<button aria-label="Clear search input" class="w-7 h-7 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors active:scale-95" id="clear-search-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+</div>
+<!-- 2. "Use my current location" Action Row -->
+<div class="w-full">
+<a class="group flex items-center justify-between p-space-md bg-surface-container-lowest rounded-[20px] shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)] active:scale-[0.99] transition-all hover:shadow-[0_12px_32px_-4px_rgba(26,26,26,0.06)]" data-path="daily-windows" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">near_me</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-bold text-on-surface truncate">Use my current location</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+              Precise outdoor telemetry
+            </span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 pl-2 shrink-0">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low font-label-md text-label-md text-on-surface-variant font-semibold">GPS Active</span>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+<!-- 3. Search Results List (matching "Tel") -->
+<div class="flex flex-col gap-space-xs" id="search-results-section">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md uppercase tracking-[0.05em] text-on-surface-variant font-bold">Search results</span>
+<span class="font-label-md text-label-md text-outline">4 matches</span>
+</div>
+<div class="bg-surface-container-lowest rounded-[20px] shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)] overflow-hidden flex flex-col">
+<!-- Row 1: Tel Aviv -->
+<a class="group flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors active:bg-surface-container" data-path="daily-windows" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span aria-label="Israel flag" class="text-xl shrink-0 select-none" role="img">🇮🇱</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">
+<span class="font-bold text-primary">Tel</span><span class="font-bold"> Aviv</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Tel Aviv District, Israel</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 pl-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-bold uppercase tracking-wider">Active</span>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-on-surface transition-colors">north_east</span>
+</div>
+</a>
+<div class="h-[1px] w-[calc(100%-2.5rem)] mx-auto bg-surface-container"></div>
+<!-- Row 2: Telde -->
+<a class="group flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors active:bg-surface-container" data-path="daily-windows" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span aria-label="Spain flag" class="text-xl shrink-0 select-none" role="img">🇪🇸</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">
+<span class="font-bold text-primary">Tel</span><span class="font-bold">de</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Canary Islands, Spain</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-on-surface transition-colors">north_east</span>
+</a>
+<div class="h-[1px] w-[calc(100%-2.5rem)] mx-auto bg-surface-container"></div>
+<!-- Row 3: Telford -->
+<a class="group flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors active:bg-surface-container" data-path="daily-windows" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span aria-label="United Kingdom flag" class="text-xl shrink-0 select-none" role="img">🇬🇧</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">
+<span class="font-bold text-primary">Tel</span><span class="font-bold">ford</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">England, United Kingdom</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-on-surface transition-colors">north_east</span>
+</a>
+<div class="h-[1px] w-[calc(100%-2.5rem)] mx-auto bg-surface-container"></div>
+<!-- Row 4: Tel Mond -->
+<a class="group flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest hover:bg-surface-container-low transition-colors active:bg-surface-container" data-path="daily-windows" href="#">
+<div class="flex items-center gap-space-sm min-w-0">
+<span aria-label="Israel flag" class="text-xl shrink-0 select-none" role="img">🇮🇱</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">
+<span class="font-bold text-primary">Tel</span><span class="font-bold"> Mond</span>
+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Central District, Israel</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px] text-outline group-hover:text-on-surface transition-colors">north_east</span>
+</a>
+</div>
+</div>
+<!-- 4. "Saved places" Section -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex flex-col px-1">
+<div class="flex items-baseline justify-between">
+<h2 class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Saved places</h2>
+<span class="font-label-md text-label-md text-on-surface-variant font-semibold">3 Locations</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Comparing optimal outdoor windows for <span class="font-semibold text-primary">Run</span></p>
+</div>
+<div class="flex flex-col gap-space-sm" id="saved-places-container">
+<!-- Card 1: Tel Aviv -->
+<div class="relative flex items-center justify-between p-space-md bg-surface-container-lowest rounded-[20px] shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)] transition-all hover:shadow-[0_12px_32px_-4px_rgba(26,26,26,0.06)] group">
+<div class="flex items-center gap-space-md min-w-0 flex-1">
+<!-- Score Pill Module -->
+<div class="w-14 h-14 rounded-full bg-primary/10 flex flex-col items-center justify-center shrink-0">
+<span class="font-numeral-score-mobile text-[1.65rem] leading-none font-extrabold text-primary">92</span>
+<span class="font-label-md text-[9px] tracking-wider uppercase font-bold text-primary mt-0.5">Great</span>
+</div>
+<!-- Place Details -->
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight truncate">Tel Aviv</span>
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-primary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+                  Run, <strong class="text-on-surface font-semibold">6:40 PM</strong> today
+                </span>
+</div>
+</div>
+</div>
+<!-- Drag Handle -->
+<div aria-label="Reorder Tel Aviv" class="flex items-center pl-space-xs text-outline hover:text-on-surface cursor-grab active:cursor-grabbing select-none shrink-0">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</div>
+</div>
+<!-- Card 2: Haifa -->
+<div class="relative flex items-center justify-between p-space-md bg-surface-container-lowest rounded-[20px] shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)] transition-all hover:shadow-[0_12px_32px_-4px_rgba(26,26,26,0.06)] group">
+<div class="flex items-center gap-space-md min-w-0 flex-1">
+<!-- Score Pill Module -->
+<div class="w-14 h-14 rounded-full bg-primary/10 flex flex-col items-center justify-center shrink-0">
+<span class="font-numeral-score-mobile text-[1.65rem] leading-none font-extrabold text-primary">86</span>
+<span class="font-label-md text-[9px] tracking-wider uppercase font-bold text-primary mt-0.5">Great</span>
+</div>
+<!-- Place Details -->
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight truncate">Haifa</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-primary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+                  Run, <strong class="text-on-surface font-semibold">7:00 PM</strong> today
+                </span>
+</div>
+</div>
+</div>
+<!-- Drag Handle -->
+<div aria-label="Reorder Haifa" class="flex items-center pl-space-xs text-outline hover:text-on-surface cursor-grab active:cursor-grabbing select-none shrink-0">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</div>
+</div>
+<!-- Card 3: Eilat -->
+<div class="relative flex items-center justify-between p-space-md bg-surface-container-lowest rounded-[20px] shadow-[0_6px_24px_-4px_rgba(26,26,26,0.04),0_2px_6px_-1px_rgba(26,26,26,0.02)] transition-all hover:shadow-[0_12px_32px_-4px_rgba(26,26,26,0.06)] group">
+<div class="flex items-center gap-space-md min-w-0 flex-1">
+<!-- Score Pill Module -->
+<div class="w-14 h-14 rounded-full bg-secondary-container/20 flex flex-col items-center justify-center shrink-0">
+<span class="font-numeral-score-mobile text-[1.65rem] leading-none font-extrabold text-secondary">71</span>
+<span class="font-label-md text-[9px] tracking-wider uppercase font-bold text-secondary mt-0.5">Okay</span>
+</div>
+<!-- Place Details -->
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface tracking-tight truncate">Eilat</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary shrink-0">schedule</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+                  Run, <strong class="text-on-surface font-semibold">6:10 AM</strong> tomorrow
+                </span>
+</div>
+</div>
+</div>
+<!-- Drag Handle -->
+<div aria-label="Reorder Eilat" class="flex items-center pl-space-xs text-outline hover:text-on-surface cursor-grab active:cursor-grabbing select-none shrink-0">
+<span class="material-symbols-outlined text-[20px]">drag_indicator</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Editorial Ambient Insight Footer -->
+<div class="p-space-md rounded-[20px] bg-surface-container-low flex items-start gap-space-sm mb-space-lg">
+<span class="material-symbols-outlined text-[20px] text-primary shrink-0 mt-0.5">wb_twilight</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Thermal Comfort Model active</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Wind and humidity calculations recalibrate automatically upon selecting any destination.</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const input = document.getElementById('location-search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+    const resultsSection = document.getElementById('search-results-section');
+
+    if (input && clearBtn) {
+      clearBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        input.value = '';
+        input.focus();
+        if (resultsSection) {
+          resultsSection.style.display = 'none';
+        }
+      });
+
+      input.addEventListener('input', function() {
+        if (resultsSection) {
+          resultsSection.style.display = input.value.trim().length > 0 ? 'flex' : 'none';
+        }
+      });
+    }
+  })();
+</script></main></body></html>
